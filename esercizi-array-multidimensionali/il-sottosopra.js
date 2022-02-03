@@ -17,3 +17,10 @@
 
   http://www.imparareaprogrammare.it
 */
+let input=[[1,2],[3.4],[5,6]]
+let output= new Array(input.length)
+for (let x=0;x<input.length-1;x++){
+  for ( let i=0;i<input.length;i++){
+    output[i]=input[i][x]
+  }console.log(output)
+}
