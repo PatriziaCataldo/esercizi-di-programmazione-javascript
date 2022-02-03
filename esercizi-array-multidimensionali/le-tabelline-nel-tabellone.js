@@ -11,3 +11,10 @@
     
   http://www.imparareaprogrammare.it
 */
+
+let array=new Array(10)
+for (let y=1;y<=10;y++){
+    for ( let x=1;x<=10;x++){
+        array[x-1]=x*y
+    }console.log(array)
+}
