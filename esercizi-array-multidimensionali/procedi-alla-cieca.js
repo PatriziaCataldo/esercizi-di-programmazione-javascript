@@ -7,3 +7,10 @@
 
   http://www.imparareaprogrammare.it
 */
+/*di quanti elementi vuoi che sia composta questa matrice?Scrivilo esprimendolo con un numero che inserirai tra le parentesi tonde di new Array!*/
+let matrice=new Array(10)
+for (let x=0;x<matrice.length;x++){
+    for (let i=0;i<matrice.length;i++){
+   matrice[i]=Math.floor(Math.random()*101)
+}console.log(matrice)
+}
