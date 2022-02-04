@@ -21,3 +21,13 @@
 
   http://www.imparareaprogrammare.it
 */
+let N=2
+undefined
+let M=new Array(3)
+undefined
+for (n=0;n<N;n++){
+    for ( let m=0;m<M.length;m++){
+        M[m]=Math.floor(Math.random()*101)
+    }console.log(M)
+}
+
