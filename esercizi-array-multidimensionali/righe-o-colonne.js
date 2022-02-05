@@ -22,12 +22,19 @@
   http://www.imparareaprogrammare.it
 */
 let N=2
-undefined
+let R=new Array(N)
 let M=new Array(3)
-undefined
+let C=new Array(M)
+let sum =0
 for (n=0;n<N;n++){
-    for ( let m=0;m<M.length;m++){
-        M[m]=Math.floor(Math.random()*101)
-    }console.log(M)
-}
+    for ( let i=0;i<M.length;i++){
+   
+        M[i]=Math.floor(Math.random()*101)
+      
+        sum += M[i] 
+        R[n]=sum
+      } console.log(M)
+       sum=0}
+console.log(R)
+
 
