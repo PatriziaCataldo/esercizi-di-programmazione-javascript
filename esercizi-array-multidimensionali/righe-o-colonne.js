@@ -20,21 +20,34 @@
         array C = [2, 70, 140]
 
   http://www.imparareaprogrammare.it
-*/
-let N=2
+*/let N=2
 let R=new Array(N)
 let M=new Array(3)
-let C=new Array(M)
+let C=new Array(M.length)
 let sum =0
+let sumC=0
 for (n=0;n<N;n++){
-    for ( let i=0;i<M.length;i++){
+
+   
+   
+   for ( let i=0;i<M.length;i++){
    
         M[i]=Math.floor(Math.random()*101)
-      
+     
         sum += M[i] 
-        R[n]=sum
-      } console.log(M)
-       sum=0}
+         R[n]=sum
+         
+         
+         C[i]=M[i]
+    
+    
+  }  console.log(M) 
+       sum=0
+      sumC=0
+       }
+
+console.log(C)
 console.log(R)
+
 
 
