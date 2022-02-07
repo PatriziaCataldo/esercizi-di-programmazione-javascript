@@ -16,4 +16,15 @@
         somma = 212
 
   http://www.imparareaprogrammare.it
-*/
+*/let sum=0
+
+let N=2
+
+let M=new Array(3)
+
+for (let y=0;y<N;y++){
+    for (let i=0;i<M.length;i++){
+    M[i]=Math.floor(Math.random()*101)
+    sum+=M[i]
+    }console.log(M)
+}console.log(sum)
