@@ -12,3 +12,21 @@
 
   http://www.imparareaprogrammare.it
 */
+let array=new Array(100)
+let newarray=array
+
+for ( let i=0;i<array.length;i++){
+    array[i]=Math.floor(Math.random()*101/2)
+}console.log(array)
+while(newarray.length>0){
+let input=prompt("Inserisci un numero")
+for (let i=0;i<array.length;i++){
+let nuovonum=array[i]/input
+if(Number.isInteger(nuovonum)){
+array[i]=0
+newarray=array
+}
+}
+console.log(array)
+ newarray=array.filter(number=>number>0)
+}console.log(newarray)
