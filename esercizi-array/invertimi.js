@@ -15,3 +15,18 @@
 
   http://www.imparareaprogrammare.it
 */
+let array1= new Array()
+
+let input=prompt("inserisci un numero")
+console.log("hai inserito il numero degli elementi che comporranno i due vettori,ed e' :"+ input)
+
+for(let i=0;i<input;i++){
+    array1[i]=Math.floor(Math.random()*101/2)   
+}  
+let array2=new Array(array1.length)
+let y=array1.length-1
+console.log(array1)
+for (let i= 0;i<array1.length;i++){
+    array2[i]=array1[y]
+    y--
+}console.log(array2)
