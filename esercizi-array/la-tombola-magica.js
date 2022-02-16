@@ -18,4 +18,43 @@
   Se non ricordi come generare un numero random e come convertirlo nel tuo intervallo riguarda l'esercizio sulle condizioni "Chi l'azzecca?".
 
   http://www.imparareaprogrammare.it
-*/
+*/let array1=new Array(10)
+let array2=new Array(10)
+for (let i=0;i<10;i++){
+ let numcaso=Math.floor(Math.random()*91)
+ let flag=true
+  for (let y=0;y<10;y++){
+  if( array1[y]==numcaso){
+  flag=false}
+  }
+ if (flag==true){
+ array1[i]=numcaso
+  }
+  }
+console.log(array1)
+for(let i=0;i<10;i++){
+ array2[i]=prompt("inserisci dei numeri dall'uno al 90 ")
+}console.log(
+ array2)
+let cont=0
+for(let i=0;i<10;i++){
+for (let y=0;y<10;y++){
+if (array1[i]==array2[y]){
+cont+=1
+}
+}
+}
+if(cont==2){
+console.log("bravo hai fatto ambo")
+}else if (cont==3){
+console.log("Bravo hai fatto terno")
+}else if(cont==4){
+console.log("BRAVO HAI FATTO QUATERNA")
+}else if(cont==5){
+console.log("Bravo hai fatto Cinquina")
+}else if(cont==10){
+console.log("Bravo hai fatto tombola")
+}else if(cont<=1){
+console.log("Mi spiace non hai vinto")
+}
+
