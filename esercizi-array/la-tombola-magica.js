@@ -24,12 +24,12 @@ for (let i=0;i<10;i++){
  let numcaso=Math.floor(Math.random()*91)
  let flag=true
   for (let y=0;y<10;y++){
-  if( array1[y]==numcaso){
+  if( array1[y]==numcaso || array[y]==0){
   flag=false}
   }
  if (flag==true){
  array1[i]=numcaso
-  }
+  }else i--
   }
 console.log(array1)
 for(let i=0;i<10;i++){
