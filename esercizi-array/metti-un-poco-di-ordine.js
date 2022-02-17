@@ -15,3 +15,14 @@
 
   http://www.imparareaprogrammare.it
 */
+let vet= new Array()
+for (i=0;i<10;i++){
+vet[i]=Math.floor(Math.random()*101)
+}console.log(vet)
+vet.sort((a,b)=>{
+if(a>b){
+return -1
+}
+})
+console.log(vet)
+
