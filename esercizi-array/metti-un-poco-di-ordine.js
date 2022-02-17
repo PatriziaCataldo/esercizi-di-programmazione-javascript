@@ -14,7 +14,7 @@
   usando if e cicli ;)
 
   http://www.imparareaprogrammare.it
-*/
+/*CON IL METODO SORT
 let vet= new Array()
 for (i=0;i<10;i++){
 vet[i]=Math.floor(Math.random()*101)
@@ -26,3 +26,20 @@ return -1
 })
 console.log(vet)
 
+*/
+/*ORDINANDO IN MANIERA CRESCENTE
+let vet= new Array(8,9,56,1,2)
+let newvet=vet
+let y=vet.length
+for ( let i=0;i<vet.length-1;i++){
+ for(let y=0;y<vet.length-1;y++){
+  if(newvet[y]>newvet[y+1]){
+  let app=newvet[y]
+  newvet[y]=newvet[y+1]
+  newvet[y+1]=app
+  }console.log(y)
+  }y--
+ 
+  }console.log(newvet)
+  
+*/
