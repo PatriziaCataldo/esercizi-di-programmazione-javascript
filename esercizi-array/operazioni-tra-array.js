@@ -18,4 +18,26 @@
 
 
   http://www.imparareaprogrammare.it
-*/
+*/let vet1=  Array()
+let vet2= Array()
+let vet3=Array()
+for ( let i=0;i<10;i++){
+vet1[i]=Math.floor(Math.random()*10+1)
+}console.log(vet1)
+for (let i=0;i<10;i++){
+vet2[i]=Math.floor(Math.random()*10+1)
+}console.log(vet2)
+let operazione=prompt("quale operazione vuoi ottenere:\n- addizione\n- sottrazione\n-prodotto\n-divisione\n")
+for ( let i=0;i<10;i++){
+if (operazione =="addizione"){vet3[i]=vet1[i]+vet2[i]
+}
+ if(operazione =='sottrazione'){ vet3[i]=vet1[i]-vet2[i];
+}
+  if(operazione =='prodotto'){ vet3[i]=vet1[i]*vet2[i];
+}
+if(operazione =='divisione'){vet3[i]=vet1[i]/vet2[i];
+}
+else (i==10)
+console.log(vet3)
+
+}
