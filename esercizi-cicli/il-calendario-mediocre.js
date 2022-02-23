@@ -44,7 +44,8 @@
   Piuttosto che avere in input il numero dei giorni del mese passa direttamente il mese e calcola tu da quanti giorni è formato.
 
   http://www.imparareaprogrammare.it
-*/let input1=prompt("In quale giorno della settimana inizia il mese?")
+
+let input1=prompt("In quale giorno della settimana inizia il mese?")
 let settimana = ["lun", "mar", "mer", "gio", "ven", "sab", "dom"]
 let input2 = prompt("quanti giorni ha il mese?")
 let durata=input2
@@ -66,4 +67,10 @@ for (let i = iniziomese.length; i < durata; i++) {
   }
 }
 console.log(mese)
+console.log(mese.length)
+let z=0
+for ( let i=0;i<mese.length;i++){
+z+=1
+console.log(mese[i] + "  "+ z )
 
+}
