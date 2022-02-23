@@ -19,3 +19,10 @@
 
   http://www.imparareaprogrammare.it
 */
+let tabella= Array()
+for (let i=1;i<=100;i++){
+tabella += i+ " "
+if (i%10==0){
+tabella += i+ " " +'\n'
+}
+}console.log(tabella)
