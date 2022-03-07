@@ -16,15 +16,12 @@
         somma = 212
 
   http://www.imparareaprogrammare.it
-*/let sum=0
-
-let N=2
-
-let M=new Array(3)
-
-for (let y=0;y<N;y++){
-    for (let i=0;i<M.length;i++){
-    M[i]=Math.floor(Math.random()*101)
-    sum+=M[i]
-    }console.log(M)
-}console.log(sum)
+*/let N=prompt("Inserisci il numero di righe")
+let M=new Array(Number(prompt("inserici il numero di colonne")))
+let sum=0
+for ( let x=0;x<N;x++){
+for (let y=0;y<M.length;y++){
+M[y]=Math.floor(Math.random()*101/2)
+sum+=M[y]
+}console.log(M)
+}console.log(`il numero che comprende tutti i numeri sopra è:${sum}`)
