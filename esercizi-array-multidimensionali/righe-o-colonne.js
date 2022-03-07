@@ -20,34 +20,38 @@
         array C = [2, 70, 140]
 
   http://www.imparareaprogrammare.it
-*/let N=2
-let R=new Array(N)
-let M=new Array(3)
-let C=new Array(M.length)
-let sum =0
-let sumC=0
-for (n=0;n<N;n++){
+*let a=prompt("inserisci il numero di righe")
+let b=prompt("inserisci il numero delle colonne")
+let matrice=[]
+for ( let x=0;x<a;x++){
+matrice[x]=[]
+}
+for ( let x=0;x<a;x++){
 
-   
-   
-   for ( let i=0;i<M.length;i++){
-   
-        M[i]=Math.floor(Math.random()*101)
-     
-        sum += M[i] 
-         R[n]=sum
-         
-         
-         C[i]=M[i]
-    
-    
-  }  console.log(M) 
-       sum=0
-      sumC=0
-       }
-
-console.log(C)
-console.log(R)
+ for (let y=0;y<b;y++){
+ matrice[x][y]=Math.floor(Math.random()*101/2)
+ 
+ }
+}
+for (let x=0;x<a;x++){
+console.log(matrice[x])
+}
 
 
-
+let R=[]
+for (let x=0;x<a;x++){
+ R[x]=0
+ for (let y=0;y<b;y++){
+ R[x]+=Number(matrice[x][y])
+ }
+}
+console.log(`Array R: [${R}]`)
+  
+let M=[]
+for ( let y=0;y<b;y++){
+ M[y]=0
+ for ( let x=0;x<a;x++){
+ M[y]+=Number(matrice[x][y])
+  }
+ }
+console.log(`Array C: [${M}]`)
