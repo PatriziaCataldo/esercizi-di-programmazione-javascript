@@ -12,3 +12,11 @@
     
   http://www.imparareaprogrammare.it
 */
+  
+function conta(num){
+  let x="num"
+  let a=x.split("")
+  let b=a.length
+  return b
+}
+ 
