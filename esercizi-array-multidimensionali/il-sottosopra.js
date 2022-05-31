@@ -18,6 +18,7 @@
   http://www.imparareaprogrammare.it
 */
 let input=[[1,2],[3,4],[5,6]]
+
 let output= []
 for (let x=0;x<input.length-1;x++){
 
